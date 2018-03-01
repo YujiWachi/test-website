@@ -1,0 +1,105 @@
+@charset "UTF-8";
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+
+
+
+
+
+/*ここから上はさわらない*/
+body {
+  letter-spacing: 0px;
+  font-family: Meiryo, メイリオ, Osaka, 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', 'MS PGothic', arial, helvetica, sans-serif;
+  /*text-align: center;*/
+  line-height: 1.4;
+  font-size: 16px;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+body a:hover {
+  text-decoration: underline;
+}
+
+body img {
+  vertical-align: bottom;
+}
+
+.sp-on {
+  display: none;
+}
+
+.pc-on {
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/* レスポンシブの時のSPにだけきくCSS */
+@media screen and (max-width: 768px) {
+  .sp-on {
+    display: block;
+  }
+}
